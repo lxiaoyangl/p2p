@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1591447088027'); /* IE9 */
+  src: url('iconfont.eot?t=1591447088027#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPEAAsAAAAACEwAAAN3AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDaIMcATYCJAMUCwwABCAFhG0HSxsrBxEVnMvIfhbGzosihMCoFCEFdjfy0tf7azca+/0iHp4fe3fue/erthmQth+JppHQLS2NRlJNbZUG1UOxKBbyjrfLn1DoyEUgdXwXsAVVSRV85zLs4M+FHQCT21xzBHLCRE0+ybcjj/4hpYf00nTwx73KWeLz2be4zDF4UC4cCk2ggI09NEItSEtYEe4wdtVSGvRmAl3rVuKcbzAGbQn3CsRuTlYKtFMKWZMe2kKzZGKKVyCkXR7znwIv/e+Pv+xDlKJR4a0uX/dJh1M/4MFGAFG3xNd6QONtBw1UrJDEXqlhVw0DK1XX/L10Cl1tRfnhQe3B8sGGorA4OxJ1yT88QpEq0YRT++AUCiY/gCEEP9QQCj8sEZIfNkL3i2l076KHB8A7JJmP+bcUKcayYnz9Vr/fySNFkpM76kJ9uyZSE9tqgt1bhACtU1myvR34b3VISD3twlqn0UzbXN+seAX9DmPc46xHkvkQj0WSRBSepQaHMHA6HWMyCRYLH99C2227tB2MX6Je6VRWpods0MPpdj3bbm6MW5LFI8w3jg2PMDojxKyDjrsZX+oWIzlRbVE55Dcx2C6XpJa3lqk+WFzysDg1d0xGXlNfQ19CXxo2K2ILbeoKsYlsU5dz4thEp7W1zbU1WOTzc4tottuu4O/fhdxdiQYzYsfNYQdn8tHYnT30Fto/63U8sR8YsQaJXqEDHeUCBpil8XrjNm3fIzDE5SpnjL6+E2YZJZs6usyxyiubIjBRuAR3rYPyGuCgsc4K1P/cn/Fq1P6eNPL8FJVI8IVv38a3HaCEdgL4Q0Ktmb+S2TIvLTZWNtLIZgzD2LCdUChmWRc/0DL1fRzRorWP0E4xZSha1qBqO4JK3Aoaeo5CU9tJ6NpxcXrPzJ4qsoNt9wGEsX0oht5ANfYJlbhv0LD0H5rGIQBdnHccFtw7ht2dGCvBFuo/2IZGRdWyC9LvqGNfcZLt49/IwbohT7Js+IYj8hhDwkcXIgoU0wBXsB32PYFncthIYkR8maaq7E1JQ8Nk54ShikAtUPsDVoOMlFta7HJff4e0qFfhmpwm5RtigW0c5BJZC9RNMLbKuZZrgg+tIIQCFEYG4Ap0qCcBAnx5Owc1RML08HmlFBVSbQXJ/KLhGdcBIA6/UChMKONa3TAUnV1rHHUbaSHWh3Vrq9HEajIBAA==') format('woff2'),
+  url('iconfont.woff?t=1591447088027') format('woff'),
+  url('iconfont.ttf?t=1591447088027') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1591447088027#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shouji:before {
+  content: "\e600";
+}
+
+.icon-gengduo:before {
+  content: "\e619";
+}
+
+.icon-tips:before {
+  content: "\e62f";
+}
+
+.icon-dianhua:before {
+  content: "\e62c";
+}
+
