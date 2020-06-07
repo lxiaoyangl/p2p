@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>index</title>
-  <!-- <link rel="stylesheet" href="./dist/css/reset.css"> -->
   <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./dist/css/iconfont.css">
   <link rel="stylesheet" href="./dist/css/index.min.css">
@@ -62,7 +61,7 @@
                 </li>
                 <li>
                   <span class="nav-item nav-link login">
-                    <a href="#">注册</a> / <a href="#">登录</a>
+                    <a href="./register.html">注册</a> / <a href="#">登录</a>
                   </span>
                 </li>
               </ul>
@@ -118,7 +117,7 @@
         <p>( 数据来源人人贷内部统计, 实时更新 )</p>
       </div>
     </div>
-
+    <!-- 特色 -->
     <div class="feature">
       <div class="container">
         <div class="row row-top">
@@ -166,18 +165,21 @@
         </div>
       </div>
     </div>
-    <div id="content" class="container-fluid">
+    <!-- 服务 -->
+    <div class="service container-fluid">
       <div class="container">
         <div class="tip">
           <h3>自动投标服务</h3>
           <p>平台根据出借人授权，帮助出借人分散投标、循环出借。
-            <span class="iconfont icon-tips"></span>&nbsp;
+            <span class="iconfont icon-tips service-tips" data-toggle="tooltip" data-placement="right"
+              title="jkjkjskjfljsljfksjkfjlajflkjaslkfjljfkljsjl"></span>&nbsp;
             到期后退出时效以实际债权转让完成用时为准。
-            <span class="iconfont icon-tips"></span>
+            <span class="iconfont icon-tips service-tips" data-toggle="tooltip" data-placement="right"
+              title="Tooltip on right"></span></span>
           </p>
         </div>
         <ul class="bid">
-          <li class="row">
+          <li class="row box-shadow">
             <div class="title">
               <div> U享服务-新手专享<span>1个月服务期限</span></div>
             </div>
@@ -202,7 +204,7 @@
           </li>
           <li class="row">
             <div class="title">
-              <div>U享服务<span>12个月服务期限</span></div> 
+              <div>U享服务<span>12个月服务期限</span></div>
               <a href="#" class="more">查看更多 <i class="iconfont icon-gengduo"></i></a>
             </div>
             <ul class="list">
@@ -228,7 +230,7 @@
             <div class="title">
               <div>薪享服务<span>12个月服务期限</span></div>
               <a class="more" href="#">查看更多 <i class="iconfont icon-gengduo"></i></a>
-              </div> 
+            </div>
             <ul class="list">
               <li>
                 <p class="color">8<span>%</span></p>
@@ -253,7 +255,7 @@
           </li>
           <li class="row">
             <div class="title">
-              <div>优选服务<span>12个月固定服务期限</span></div> 
+              <div>优选服务<span>12个月固定服务期限</span></div>
             </div>
             <ul class="list">
               <li>
@@ -276,19 +278,133 @@
             </ul>
           </li>
         </ul>
-        
-        <div class="tip">
-          <h3>自动投标服务</h3>
-          <p>平台根据出借人授权，帮助出借人分散投标、循环出借。
-            <span class="iconfont icon-tips"></span>&nbsp;
-            到期后退出时效以实际债权转让完成用时为准。
-            <span class="iconfont icon-tips"></span>
-          </p>
-        </div>
       </div>
     </div>
-  </main>
+    <!-- 投标 -->
+    <div class="credit">
+      <div class="container">
+        <div class="title">
+          <div class="text">散标/债权
+            <p>人人贷经对借款人进行信息收集和审核后所发布的借款标的.请您充分了解借款标的信息,谨慎出借.</p>
+          </div>
+          <a class="more" href="#">查看更多 <i class="iconfont icon-gengduo"></i></a>
+          
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <td class="rate">年利率</td>
+              <td class="name">借款标题</td>
+              <td class="time">期限</td>
+              <td class="money">金额</td>
+              <td class="progresed">投标进度</td>
+              <td class="action">操作</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="rate">12.00%</td>
+              <td class="name">NO.9447692</td>
+              <td class="time">9个月</td>
+              <td class="money">1,500.00元</td>
+              <td class="progresed">
+                <div class="text">100%</div> 
+                <span class="progress"></span>
+              </td>
+              <td class="action"><a href="#">投标</a></td>
+            </tr>
+            <tr>
+              <td class="rate">12.00%</td>
+              <td class="name">NO.9447692</td>
+              <td class="time">9个月</td>
+              <td class="money">1,500.00元</td>
+              <td class="progresed">
+                <div class="text">100%</div> 
+                <span class="progress"></span>
+              </td>
+              <td class="action"><a href="#">投标</a></td>
+            </tr>
+            <tr>
+              <td class="rate">12.00%</td>
+              <td class="name">NO.9447692</td>
+              <td class="time">9个月</td>
+              <td class="money">1,500.00元</td>
+              <td class="progresed">
+                <div class="text">100%</div> 
+                <span class="progress"></span>
+              </td>
+              <td class="action"><a href="#">投标</a></td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
 
+      
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="foot-cont">
+        <div class="foot-nav">
+        <div class="n-title">
+          快捷导航
+        </div>
+        <div class="shortcut">
+          <ul class="list">
+            <li><a href="#">有信惠普</a></li>
+            <li><a href="#">人人学院</a></li>
+            <li><a href="#">用户论坛</a></li>
+            <li><a href="#">优选服务</a></li>
+            <li><a href="#">U享服务</a></li>
+            <li><a href="#">薪享服务</a></li>
+            <li><a href="#">债权转让</a></li>
+          </ul>
+          
+        </div>
+        
+      </div>
+      <div class="foot-nav">
+        <div class="n-title">
+          客户服务
+        </div>
+        <div class="shortcut">
+          <ul class="list">
+            <li><a href="#">微信</a></li>
+            <li><a href="#">新浪微博</a></li>
+            <li><a href="#">在线客服</a></li>
+            <li><a href="#">征信异议受理渠道</a></li>
+          </ul>
+          
+        </div>
+        
+      </div>
+      </div>
+      <div class="copyright">
+        <div class="left">
+          <p class="company">&copy; <span>2020</span>人人贷商务顾问(北京)有限公司 All rights reserved </p>
+          <p class="provider">京ICP证 100953号 京公网安备 11010802021944<a class="num" href="#">京ICP备12025643号-1</a></p>
+          <a href="#"><img src="./img/danger.png"> 风险提示<i><img src="./img/right.png" alt=""></i></a>
+        </div>
+        <div class="cen">
+          <img src="./img/rrd-fuwuhao.png" alt="">
+          <img src="./img/app-weixin_3a494ac.png" alt="">
+        </div>
+        <div class="right">
+          <div class="tel">95700</div>
+          <p>人人贷客服 (9:00-21:00)</p>
+        </div>
+      </div>
+      <ul class="authention">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="./dist/js/jquery.min.js"></script>
   <script src="./dist/js/bootstrap.min.js"></script>
