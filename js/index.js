@@ -17,7 +17,7 @@ $(function () {
         return false
     })
 
-//通过hash改变页面
+    //通过hash改变页面
     //监听hash改变事件调用函数
     window.onhashchange = navchange;
     //通过hash改变页面内容
@@ -48,11 +48,34 @@ $(function () {
     //通过hash添加激活样式
     function chagenNav(hash) {
         $('.second .list .nav-item[href=' + hash + ']').addClass('active')
-        .closest('li').siblings('li').find('a').removeClass('active')
+            .closest('li').siblings('li').find('a').removeClass('active')
 
         /*  
         $('.second .list .nav-item').removeClass('active')
         $('.second .list .nav-item[href='+hash+']').addClass('active')
         */
     }
+    //登陆跳转
+    loginChange();
+    function loginChange() {
+        //获取本地存储数据
+        var username = localStorage.getItem('username')
+        var pwd = localStorage.getItem('uid')
+        if (pwd && username) {
+            //将首页的内容改变
+            $('#login').html('<a href="./login.html">' + username + '</a> / <a href="./register.html" id="regOut">注销</a>')
+        } else {
+            $('#login').html('<a href="./login.html">登录</a> / <a href="./register.html" id="regOut">注册</a>')
+        }
+    }
+    //点击注销
+    $('#login').on('click', '#regOut', function () {
+        if (confirm('您是否要退出?')) {
+            localStorage.removeItem('username')
+            localStorage.removeItem('uid')
+            $('#login').html('<a href="./login.html">登录</a> / <a href="./register.html" id="regOut">注册</a>')
+        }
+
+
+    })
 })
