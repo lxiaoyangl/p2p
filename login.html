@@ -4,33 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>注册</title>
+    <title>登录</title>
     <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./dist/css/iconfont.css">
     <link rel="stylesheet" href="./dist/css/login.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <h1>登录</h1>
-                <div class="form-group mb-4">
-                    <label for="username">用户名</label>
-                    <input type="text" class="form-control" id="username" placeholder="请输入您的用户名">
-                    <span class="errow">sssss</span>
-                </div>
-                <div class="form-group">
-                    <label for="pwd">密码</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="请输入您的密码">
-                </div>
-                <button type="button" class="btn btn-primary mb-5" id="loginBtn">登录</button>
-            </div>
-            <div class="col-md-2"></div>
+    <header>
+        <div class="container">
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="">
+            </a>
         </div>
-    </div>
-
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="container">
+                <img src="./img/WechatIMG144.jpeg" alt="" class="imgg">
+                <div class="show-box">
+                    <div class="reg-box">
+                        <div class="title">登录</div>
+                        <div class="form-group">
+                            <input type="text" id="username" placeholder="请输入用户名">
+                            <div class="text-muted"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="pwd" placeholder="请输入密码">
+                            <div class="text-muted"></div>
+                        </div>
+                        <p class="btn"><button type="button">立即登录</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <ul class="container-fluid">
             <li>
