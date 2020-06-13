@@ -4,85 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>index</title>
+  <title>账号充值</title>
   <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./dist/css/iconfont.css">
-  <link rel="stylesheet" href="./dist/css/index.min.css">
+  <link rel="stylesheet" href="./dist/css/chargemoney.min.css">
   
   <script src="./dist/js/jquery.min.js"></script>
   <script src="./dist/js/bootstrap.min.js"></script>
   <script src="./dist/js/echarts.min.js"></script>
   <script src="./dist/js/popper.min.js"></script>
-  <script src="./dist/js/index.min.js"></script>
+  <script src="./dist/js/chargemoney.min.js"></script>
 </body>
 </head>
 
 <body>
-  <!-- 头部 -->
-  <header>
-    <div class="container-fluid">
-      <div class="bgcolor">
-        <div class="container">
-          <div class="top">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="collapse navbar-collapse col  justify-content-between" id="navbarNavAltMarkup">
-                <div class="navbar-nav row-md-2">
-                  <span class="nav-item nav-link tel-phone">
-                    <i class="iconfont icon-dianhua"></i>
-                    客服电话:95770
-                  </span>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <h1>账户充值</h1>
+                <div class="form-group">
+                    <label for="bankcode">银行</label>
+                    <select class="form-control" id="bankcode">
+                    <option value="1">中国工商银行</option>
+                    <option value="2">中国农业银行</option>
+                    <option value="3">中国招商银行</option>
+                    </select>
                 </div>
-                <div class="navbar-nav row-md-10">
-                  <a class="nav-item nav-link" href="#">出借人教育</a>
-                  <a class="nav-item nav-link" href="#">人人学院</a>
-                  <a class="nav-item nav-link" href="#">关于我们</a>
-                  <a class="nav-item nav-link" href="#">帮助中心</a>
-                  <a class="nav-item nav-link" href="#">用户论坛</a>
-                  <a class="nav-item nav-link" href="#">
-                    <i class="iconfont icon-shouji"></i>移动客户端</a>
+                <div class="form-group">
+                    <label for="chargemoney">充值金额</label>
+                    <input type="number" class="form-control" id="chargemoney" value="100">
+                    <div class="hint">充值金额不能小于100</div>
                 </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="second">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse col  justify-content-between" id="navbarNavAltMarkup">
-              <div class="navbar-nav row-md-2">
-                <h1 class="nav-item nav-link"></h1>
-              </div>
-              <ul class="navbar-nav row-md-10 list">
-                <li>
-                  <a class="nav-item nav-link active" href="#home">首页</a>
-                </li>
-                <li>
-                  <a class="nav-item nav-link" href="#invest">我要投资</a>
-                </li>
-                <li>
-                  <a class="nav-item nav-link" href="#borrow">我要借款/还款</a>
-                </li>
-                <li>
-                  <a class="nav-item nav-link" href="#mymsg">个人信息</a>
-                </li>
-                <li>
-                  <span class="nav-item nav-link" id="login">
-                    <a href="./login.html">登录</a> /
-                    <a href="./register.html">注册</a>
-                  </span>
-                </li>
-              </ul>
+                <button type="button" class="btn btn-primary mt-3" id="isOK">确定充值</button>
             </div>
-          </nav>
         </div>
-      </div>
     </div>
-  </header>
-  <!-- 主体 -->
-  <main id="main">
-    主体内容
-  </main>
   <!-- 页脚 -->
   <footer>
     <div class="container">
@@ -161,6 +118,4 @@
       <a href="#" class="retop"><img src="./img/arrow_15105f4.png" alt=""></a>
     </div>
   </footer>
-
-
 </html>

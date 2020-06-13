@@ -37,7 +37,7 @@ $(function () {
             case "#mymsg":
                 /* $('#main').load("../../pages/mymsg.html");
                 $('#rightContent').load('../../pages/mymsg/getuserinfo.html') */
-                // loadPage('#mymsg/getuserinfo')
+                loadPage('#mymsg/getuserinfo')
                 break;
                 //个人中心==>账户信息
             case "#mymsg/getuserinfo":
@@ -45,6 +45,9 @@ $(function () {
                 break;
                 //个人中心==>更新资料
             case "#mymsg/updateuser":
+                loadPage(hash)
+                //个人中心==>发布贷款
+            case "#mymsg/borrow_apply":
                 loadPage(hash)
                 break;
             //我要借款
@@ -64,8 +67,7 @@ $(function () {
     //加载个人中心二级页面
     function loadPage(hash){
         // 去掉获取到的hash的#号
-        hash = hash.substr(1)
-        // console.log(hash);
+        hash = hash.substr(1) 
         // 切换页面
         if($('#rightContent').length){//点击
             $('#rightContent').load('../../pages/'+ hash +'.html')
@@ -81,6 +83,7 @@ $(function () {
     //二级路由激活样式改变
     function activePage(hash){
         //此时的hash为去掉#的值
+        
         $('.list-group li a').removeClass('active')
         $('.list-group li a[href="#'+hash+'"]').addClass('active')
     }
