@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="../lib/xlPaging/css/xlPaging.css">
 <link rel="stylesheet" href="../dist/css/invest.min.css">
 
 <!-- 网页内容 -->
 <div class="container">
-    <h4 class="page-title">投资列表</h4>
+    <h1 class="page-title">投资列表</h1>
     <form action="invest_list.html" id="searchForm">
         <div style="margin: 20px 0px;">
                 <span class="text-muted">标的状态</span><div style="margin-left: 30px" class="btn-group" data-toggle="buttons">
@@ -21,36 +22,23 @@
     <table class="table el-table table-hover">
         <thead id="gridHead">
             <tr>
-                <th>借款人</th>
-                <th width="180px">借款标题</th>
-                <th>年利率</th>
+                <th id="userid">借款人</th>
+                <th width="180px" id="title">借款标题</th>
+                <th id="">年利率</th>
                 <th>金额</th>
-                <th>还款方式</th>
+                <th id="repaytype">还款方式</th>
                 <th>进度</th>
                 <th width="80px">操作</th>
             </tr>
         </thead>
-        <tbody id="gridBody">
-        <tr>
-            <td>zs</td>
-            <td>给我2000度过难关</td>
-            <td class="text-info"> 10.00%
-            </td>
-            <td class="text-info">2,000.00</td>
-            <td>
-                按月分期还款
-            </td>
-            <td>
-                <div class="">
-                    100.00%
-                </div>
-            </td>
-            <td><a class="btn btn-danger btn-sm" href="borrow_info.html?id=7">查看</a></td>
-        </tr>
+        <tbody id="list">
+       
         </tbody>
     </table>
+        <ul id="page"></ul>
     <div style="text-align: center;">
         <ul id="pagination" class="pagination"></ul>
     </div>
 </div>
+<script src="../lib/xlPaging/js/jquery.xlPaging.js"></script>
 <script src="../dist/js/invest.min.js"></script>

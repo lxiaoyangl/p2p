@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/css/iconfont.css">
+    <link rel="stylesheet" href="./dist/css/borrow_ibfo.min.css">
+
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/echarts.min.js"></script>
+    <script src="./dist/js/popper.min.js"></script>
+    <script src="./dist/js/borrow_info.min.js"></script>
+    <script src="./dist/js/isLogin.min.js"></script>
+    </body>
+</head>
+
+<body>
+    <!-- 主体 -->
+    <main>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+               <h1>借款详情</h1>
+                <div>
+                    <table width="100%" height="250px">
+                        <tr>
+                            <td class="muted" width="90px">借款人</td>
+                            <td class="text-info" style="padding-left: 10px;" id="userid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="muted" width="80px">借款标题</td>
+                            <td class="text-info" style="padding-left: 10px;" id="title">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="muted" width="100px">借款金额(元)</td>
+                            <td class="text-info" style="padding-left: 10px;" id="borrowmoney">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="muted" width="80px">已经借到(元)</td>
+                            <td class="text-info" style="padding-left: 10px;" id="ownmoney">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="muted" width="80px">借款利率(%)</td>
+                            <td class="text-info" style="padding-left: 10px;" id="interest">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="muted" width="80px">奖金(元)</td>
+                            <td class="text-info" style="padding-left: 10px;" id="bouns">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="muted" width="80px">借款描述</td>
+                            <td class="text-info" style="padding-left: 10px;" id="info">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" id="chargemoney" placeholder="投资金额...">
+                        </div>
+                        <button type="button" class=" btn btn-info" id="chargeBtn">确认投资</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="foot-cont">
+                <div class="foot-nav">
+                    <div class="n-title">
+                        快捷导航
+                    </div>
+                    <div class="shortcut">
+                        <ul class="list">
+                            <li><a href="#">有信惠普</a></li>
+                            <li><a href="#">人人学院</a></li>
+                            <li><a href="#">用户论坛</a></li>
+                            <li><a href="#">优选服务</a></li>
+                            <li><a href="#">U享服务</a></li>
+                            <li><a href="#">薪享服务</a></li>
+                            <li><a href="#">债权转让</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="foot-nav">
+                    <div class="n-title">
+                        客户服务
+                    </div>
+                    <div class="shortcut">
+                        <ul class="list">
+                            <li><a href="#">微信</a></li>
+                            <li><a href="#">新浪微博</a></li>
+                            <li><a href="#">在线客服</a></li>
+                            <li><a href="#">征信异议受理渠道</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="left">
+                    <p class="company">&copy; <span>2020</span>人人贷商务顾问(北京)有限公司 All rights reserved </p>
+                    <p class="provider">京ICP证 100953号 京公网安备 11010802021944<a class="num" href="#">京ICP备12025643号-1</a>
+                    </p>
+                    <a href="#"><img src="./img/danger.png"> 风险提示<i><img src="./img/right.png" alt=""></i></a>
+                </div>
+                <div class="cen">
+                    <img src="./img/rrd-fuwuhao.png" alt="">
+                    <img src="./img/app-weixin_3a494ac.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="tel">95700</div>
+                    <p>人人贷客服 (9:00-21:00)</p>
+                </div>
+            </div>
+            <ul class="authention">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="fixed-box">
+            <a href="#">
+                <img src="./img/calc_58f7ccc.png" alt="" class="none">
+                <div class="text">回报计算</div>
+            </a>
+            <a href="#" class="customer">
+                <img src="./img/help_8052a76.png" alt="" class="none">
+                <div class="text">在线客服</div>
+            </a>
+            <a href="#" class="phone">
+                <img src="./img/download_cc99e0e.png" alt="" class="none">
+                <div class="text">下载APP</div>
+            </a>
+            <a href="#" class="retop"><img src="./img/arrow_15105f4.png" alt=""></a>
+        </div>
+    </footer>
+
+
+</html>
